@@ -16,10 +16,47 @@
                 <li><a href="about.html">About us</a></li>
             </ul>
         </nav>
-        <div></div>
-        <p>
+        <main>
+            <h1>Contact Us</h1>
+            <h2>Contact Number</h2>
+            <address id="contactAddress">0123 456 789</address>
+            <h2>Address</h2>
+            <address>
+                123 Address Name,<br>
+                Sydney, NSW,<br>
+                0100
+            </address>
+            <!--Code to embed Google Maps goes here-->
+            <aside>
+                <h3>Enquire Us</h3>
+                <form name="contact_form" id="contact_form" method="post" action="#"></form>
 
-        </p>
+                <label for="firstName">First Name:</label><br>
+                <input type="text" name="firstName" id="firstName"><br>
+
+                <label for="lastName">Last Name:</label><br>
+                <input type="text" name="lastName" id="lastName"><br>
+
+                <label for="email">Email:</label><br>
+                <input type="text" name="email" id="email"><br>
+
+                <label for="phoneNo">Phone Number:</label><br>
+                <input type="text" name="phoneNo" id="phoneNo"><br>
+
+                <label for="Date">Date:</label><br>
+                <input type="date" name="Date" id="Date"><br>
+
+                <label for="enquiryButton">What's your Enquiry?</label><br>
+                <input type="radio" name="enquiryButton" id="enquiryButton">Something is wrong with my payment method<br>
+                <input type="radio" name="enquiryButton" id="enquiryButton">Issue with my order<br>
+
+                Any Comments?<br>
+                <textarea name="messageBox"></textarea><br>
+
+                <!--<button>Submit Enquiry</button>-->
+                <input type="button" name="submit" value="Submit Enquiry">
+            </aside>
+        </main>
         <footer>&copy; Simon's Chocolate Shop 2022</footer>
     </body>
 </html>

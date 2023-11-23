@@ -72,3 +72,47 @@ main p {
     line-height: 150%;
     line-height: 1.25em;
 }
+
+/* Table styling */
+
+table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    margin: 1em auto;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: .2em .7em;
+    text-align: left;
+}
+
+tbody tr {
+    background-color: #F5CBB0;
+}
+
+thead {
+    background-color: #8C4B1D;
+    color: #fff;
+}
+
+tfoot {
+    font-weight: bold;
+}
+
+/* Enquiry Form */
+
+aside {
+    background-color: #804901;
+    border: 1px solid #000;
+    color: #fff;
+    text-align: left;
+    font-style: normal;
+    width: justify;
+    float: right;
+}
+
+aside h3 {
+    text-align: center;
+    font-style: normal;
+}
