@@ -23,6 +23,7 @@ footer {
     clear: both;
     text-align: left;
     padding: 1em;
+    color: #fff;
 }
 
 /* 2 Column Layout */
@@ -50,10 +51,12 @@ nav ul li a {
 
 nav .current {
     background-color: #8C4B1D;
+    color: #fff;
 }
 
 a:hover {
     background-color: #804901;
+    color: #fff;
 }
 
 /* Page Styling */
