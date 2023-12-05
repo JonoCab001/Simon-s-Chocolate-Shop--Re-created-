@@ -17,6 +17,8 @@ header img{
 header, footer {
     background-color: #8C4B1D;
     padding: 1em;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
 }
 
 footer {
@@ -33,7 +35,6 @@ nav ul {
     float: left;
     width: 10em;  
     background-color: #FFDDB0;
-    border-top: 2px solid #000;
     border-bottom: 2px solid #000;
     border-right: 2px solid #000;
 }
@@ -47,6 +48,8 @@ nav ul li a {
     display: block;
     padding: 0.8em 1em;
     text-decoration: none;
+    display: block;
+    border-bottom: 1px solid #000;
 }
 
 nav .current {
@@ -67,8 +70,8 @@ main {
     margin-left: 10em;
     text-align: justify;
     padding: 2em;
-    border-top: 2px #000;
-    border-bottom: 2px #000;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
 }
 
 main p {
