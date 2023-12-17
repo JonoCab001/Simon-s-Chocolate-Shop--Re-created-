@@ -4,6 +4,7 @@
         <title>Simon's Chocolate Shop</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
         <header><a href="index.html"><img src="images/SimonsChocolateShopLogo.png" alt="Simon's Chocolate Shop Logo"></a></header>
@@ -16,7 +17,7 @@
                 <li><a href="about.html">About us</a></li>
             </ul>
         </nav>
-        <main>
+        <div class="main">
             <h1>Contact Us</h1>
             <h2>Contact Number</h2>
             <address id="contactAddress">0123 456 789</address>
@@ -29,7 +30,8 @@
             <!--Code to embed Google Maps goes here-->
             <h2>Where we located at</h2>
             <img src="images/map.png" alt="Image of Google Maps (Photoshopped)">
-            <aside>
+            <div class="right">
+                <aside>
                 <h3>Enquire Us</h3>
                 <form name="contact_form" id="contact_form" method="post" action="#"></form>
 
@@ -57,8 +59,9 @@
 
                 <!--<button>Submit Enquiry</button>-->
                 <input type="button" name="submit" value="Submit Enquiry">
-            </aside>
-        </main>
+                </aside>
+            </div>
+        </div>
         <footer>&copy; Simon's Chocolate Shop 2022</footer>
     </body>
 </html>
