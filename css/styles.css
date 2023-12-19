@@ -28,8 +28,45 @@ footer {
     color: #fff;
 }
 
-/* 2 Column Layout */
+/* Navigation Bar (Horizontal) */
 
+nav ul {
+    list-style-type: none;  
+    background-color: #FFDDB0;
+    border-bottom: 2px solid #000;
+    overflow: hidden;
+    margin: 0cm;
+    padding: 0em;
+}
+
+nav ul li {
+    display: inline;
+    list-style-type: none;  
+    background-color: #FFDDB0;
+    padding: 0em;
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+nav .current {
+    background-color: #8C4B1D;
+    color: #fff;
+}
+
+a:hover {
+    background-color: #804901;
+    color: #fff;
+}
+
+/* 2 Column Layout */
+/*
 nav ul {
     list-style-type: none;
     float: left;
@@ -61,6 +98,7 @@ a:hover {
     background-color: #804901;
     color: #fff;
 }
+*/
 
 /* Page Styling */
 
