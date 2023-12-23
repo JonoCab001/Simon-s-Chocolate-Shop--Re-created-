@@ -29,7 +29,6 @@ footer {
 }
 
 /* Navigation Bar (Horizontal) */
-
 nav ul {
     list-style-type: none;  
     background-color: #FFDDB0;
@@ -64,6 +63,58 @@ a:hover {
     background-color: #804901;
     color: #fff;
 }
+
+/* Displaying the nav bar in responsive view (Currently W.I.P) */
+/*
+.topnav {
+    background-color: #FFDDB0;
+    overflow: hidden;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav .current {
+    background-color: #8C4B1D;
+    color: #fff;
+}
+
+.topnav a:hover {
+    background-color: #804901;
+    color: #fff;
+}
+
+.topnav .toggleButton {
+    display: none;
+}
+*/
+
+/* Dropdown Menu (Currently W.I.P)*/
+/*.dropdown {
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    height: 0;
+    width: 300px;
+    background-color: #FFDDB0;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown ul li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
 
 /* 2 Column Layout */
 /*
@@ -163,12 +214,7 @@ aside h3 {
 
 /* Display in Responsive view (i.e., Mobile or Tablet View) */
 
-/*.wrapper {
-    max-width: 960px;
-    margin: 2em auto;
-}*/
-
-@media only screen and (max-width:500px){
+@media only screen and (max-width:500px) {
     .main .right{
         width: 100%;
     }
@@ -177,3 +223,34 @@ aside h3 {
         width: 100%;
     }
 }
+
+/* **Currently W.I.P***
+@media screen and (max-width:500px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .dropdown.open {
+        height: 240px;
+    }
+}
+*/
