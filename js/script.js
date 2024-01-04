@@ -1,6 +1,12 @@
 // This Script is still W.I.P
-// This will toggle the myTopNav menu in responsive view whenever the user taps on the icon
+// This will toggle the nav menu in responsive view whenever the user taps on the icon
 
-const toggleBtn = document.querySelector("toggle_button")
-const toggleBtnIcon = document.querySelector("toggle_button i")
-const dropDownMenu = document.querySelector
+function myFunction() {
+    var x = document.getElementById("myNav");
+    if (x.className === "nav") {
+        x.className += " responsive";
+    }
+    else {
+        x.className = "nav";
+    }
+}

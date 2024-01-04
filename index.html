@@ -4,22 +4,27 @@
         <title>Simon's Chocolate Shop</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="css/styles.css">
     </head>
-    <!--Script is currently W.I.P-->
-    <!--script src="js/script.js"></script-->
+    <script src="js/script.js"></script>
     <body>
         <header><a href="index.html"><img src="images/SimonsChocolateShopLogo.png" alt="Simon's Chocolate Shop Logo"></a></header>
-        <nav>
-            <ul>
-                <li><a href="index.html" class="current">Home</a></li>
-                <li><a href="chocolates.html">Chocolates</a></li>
-                <li><a href="prices.html">Prices</a></li>
-                <li><a href="contact.html">Contact us</a></li>
-                <li><a href="about.html">About us</a></li>
-            </ul>
-        </nav>
+        <div class="nav" id="myNav">
+            <a href="index.html" class="current">Home</a>
+            <a href="chocolates.html">Chocolates</a>
+            <a href="prices.html">Prices</a>
+            <a href="contact.html">Contact us</a>
+            <a href="about.html">About us</a>
+            <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <!--div class="dropdown">
+            <li><a href="index.html" class="current">Home</a></li>
+            <li><a href="chocolates.html">Chocolates</a></li>
+            <li><a href="prices.html">Prices</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="about.html">About us</a></li>
+        </div-->
         <div class="main">
             <p>
                 Welcome to Simon's Chocolate Shop<br>

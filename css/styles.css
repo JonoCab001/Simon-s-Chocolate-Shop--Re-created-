@@ -29,7 +29,14 @@ footer {
 }
 
 /* Navigation Bar (Horizontal) */
-nav ul {
+
+/* NAVIGATION 1 */
+/*
+.nav {
+    overflow: hidden;
+}
+
+.nav ul {
     list-style-type: none;  
     background-color: #FFDDB0;
     border-bottom: 2px solid #000;
@@ -38,7 +45,7 @@ nav ul {
     padding: 0em;
 }
 
-nav ul li {
+.nav ul li {
     display: inline;
     list-style-type: none;  
     background-color: #FFDDB0;
@@ -46,7 +53,7 @@ nav ul li {
     float: left;
 }
 
-nav ul li a {
+.nav ul li a {
     display: block;
     color: #000;
     text-align: center;
@@ -54,24 +61,62 @@ nav ul li a {
     padding: 14px 16px;
 }
 
-nav .current {
+.nav .current {
     background-color: #8C4B1D;
     color: #fff;
 }
 
-a:hover {
+.nav a:hover {
     background-color: #804901;
     color: #fff;
 }
 
+.nav .icon {
+    display: none;
+    color: #000;
+    text-decoration: none;
+}
+*/
+
+.nav {
+    overflow: hidden;
+    background-color: #FFDDB0;
+    border-bottom: 2px solid #000;
+    
+}
+
+.nav a {
+    float: left;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+.nav .current {
+    background-color: #8C4B1D;
+    color: #fff;
+}
+
+.nav a:hover {
+    background-color: #804901;
+    color: #fff;
+}
+
+.nav .icon {
+    display: none;
+    color: #000;
+    text-decoration: none;
+}
+
 /* Displaying the nav bar in responsive view (Currently W.I.P) */
 /*
-.topnav {
+.nav {
     background-color: #FFDDB0;
     overflow: hidden;
 }
 
-.topnav a {
+.nav a {
     float: left;
     display: block;
     color: #000;
@@ -81,22 +126,24 @@ a:hover {
     font-size: 17px;
 }
 
-.topnav .current {
+.nav .current {
     background-color: #8C4B1D;
     color: #fff;
 }
 
-.topnav a:hover {
+.nav a:hover {
     background-color: #804901;
     color: #fff;
 }
 
-.topnav .toggleButton {
+.nav .toggleButton {
     display: none;
+    color: #000;
 }
 */
 
-/* Dropdown Menu (Currently W.I.P)*/
+/* Dropdown Menu */
+
 /*.dropdown {
     display: none;
     position: absolute;
@@ -109,12 +156,17 @@ a:hover {
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.dropdown ul li {
+.dropdown li {
     padding: 0.7rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }*/
+
+/*.dropdown.open {
+    height: 240px;
+}*/
+
 
 /* 2 Column Layout */
 /*
@@ -213,6 +265,16 @@ aside h3 {
 }
 
 /* Display in Responsive view (i.e., Mobile or Tablet View) */
+@media screen and (max-width:500px) {
+    .nav a:not(:first-child) {
+        display: none;
+    }
+
+    .nav a.icon {
+        float: right;
+        display: block;
+    }
+}
 
 @media only screen and (max-width:500px) {
     .main .right{
@@ -222,35 +284,21 @@ aside h3 {
     aside {
         width: 100%;
     }
-}
 
-/* **Currently W.I.P***
-@media screen and (max-width:500px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-        float: right;
+    /*.nav .toggleButton{
         display: block;
-    }
+    }*/
 
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
+    .nav.responsive {position: relative;}
+    .nav.responsive .icon {
         position: absolute;
         right: 0;
         top: 0;
     }
 
-    .topnav.responsive a {
+    .nav.responsive a {
         float: none;
         display: block;
         text-align: left;
     }
-
-    .dropdown {
-        display: block;
-    }
-
-    .dropdown.open {
-        height: 240px;
-    }
 }
-*/
