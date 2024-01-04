@@ -1,4 +1,3 @@
-// This Script is still W.I.P
 // This will toggle the nav menu in responsive view whenever the user taps on the icon
 
 function myFunction() {

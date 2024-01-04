@@ -30,54 +30,6 @@ footer {
 
 /* Navigation Bar (Horizontal) */
 
-/* NAVIGATION 1 */
-/*
-.nav {
-    overflow: hidden;
-}
-
-.nav ul {
-    list-style-type: none;  
-    background-color: #FFDDB0;
-    border-bottom: 2px solid #000;
-    overflow: hidden;
-    margin: 0cm;
-    padding: 0em;
-}
-
-.nav ul li {
-    display: inline;
-    list-style-type: none;  
-    background-color: #FFDDB0;
-    padding: 0em;
-    float: left;
-}
-
-.nav ul li a {
-    display: block;
-    color: #000;
-    text-align: center;
-    text-decoration: none;
-    padding: 14px 16px;
-}
-
-.nav .current {
-    background-color: #8C4B1D;
-    color: #fff;
-}
-
-.nav a:hover {
-    background-color: #804901;
-    color: #fff;
-}
-
-.nav .icon {
-    display: none;
-    color: #000;
-    text-decoration: none;
-}
-*/
-
 .nav {
     overflow: hidden;
     background-color: #FFDDB0;
@@ -108,65 +60,6 @@ footer {
     color: #000;
     text-decoration: none;
 }
-
-/* Displaying the nav bar in responsive view (Currently W.I.P) */
-/*
-.nav {
-    background-color: #FFDDB0;
-    overflow: hidden;
-}
-
-.nav a {
-    float: left;
-    display: block;
-    color: #000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.nav .current {
-    background-color: #8C4B1D;
-    color: #fff;
-}
-
-.nav a:hover {
-    background-color: #804901;
-    color: #fff;
-}
-
-.nav .toggleButton {
-    display: none;
-    color: #000;
-}
-*/
-
-/* Dropdown Menu */
-
-/*.dropdown {
-    display: none;
-    position: absolute;
-    right: 2rem;
-    top: 60px;
-    height: 0;
-    width: 300px;
-    background-color: #FFDDB0;
-    overflow: hidden;
-    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.dropdown li {
-    padding: 0.7rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}*/
-
-/*.dropdown.open {
-    height: 240px;
-}*/
-
 
 /* 2 Column Layout */
 /*
@@ -284,10 +177,6 @@ aside h3 {
     aside {
         width: 100%;
     }
-
-    /*.nav .toggleButton{
-        display: block;
-    }*/
 
     .nav.responsive {position: relative;}
     .nav.responsive .icon {
