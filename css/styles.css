@@ -140,6 +140,13 @@ tfoot {
     font-weight: bold;
 }
 
+/* Making Images Responsive */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 /* Enquiry Form */
 
 aside {
@@ -158,6 +165,7 @@ aside h3 {
 }
 
 /* Display in Responsive view (i.e., Mobile or Tablet View) */
+
 @media screen and (max-width:500px) {
     .nav a:not(:first-child) {
         display: none;
