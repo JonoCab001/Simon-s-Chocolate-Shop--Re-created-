@@ -155,8 +155,9 @@ aside {
     color: #fff;
     text-align: left;
     font-style: normal;
-    width: justify;
+    width: 290px;
     float: right;
+    display: block;
 }
 
 aside h3 {
