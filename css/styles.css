@@ -113,6 +113,15 @@ main p {
     line-height: 1.25em;
 }
 
+.inputForms {
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 15px;
+    
+    display: grid;
+    padding: 30px;
+}
+
 /* Table styling */
 
 table {
