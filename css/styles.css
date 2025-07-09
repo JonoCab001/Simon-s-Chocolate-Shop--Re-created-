@@ -116,10 +116,30 @@ main p {
 .inputForms {
     justify-content: center;
     border: 1px solid #000;
+    border-top: 2px solid #000;
     border-radius: 15px;
-    
-    display: grid;
-    padding: 30px;
+    flex-direction: column;
+    display: flex;
+    padding: 3.5em;
+    margin: 50px;
+    background-color: #FFDDB0;
+}
+
+.inputForms input {
+    width: 100%;
+    padding: 0.5em;
+    margin: 0.5em 0;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.inputForms button {
+    width: 100%;
+    padding: 0.5em;
+    background-color: #8C4B1D;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
 }
 
 /* Table styling */
