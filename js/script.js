@@ -1,3 +1,7 @@
+/*const signUpButton = document.getElementById("signUpButton");
+const signUpForm = document.getElementById('inputForms');*/
+
+
 // This will toggle the nav menu in responsive view whenever the user taps on the icon
 
 function myFunction() {
@@ -9,3 +13,8 @@ function myFunction() {
         x.className = "nav";
     }
 }
+
+// This is to ensure the sign up button works successfully
+/* signUpButton.addEventListener("click", function() {
+    signUpForm.style.display = "block";
+}); */

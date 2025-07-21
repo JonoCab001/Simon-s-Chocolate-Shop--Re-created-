@@ -142,6 +142,11 @@ main p {
     border-radius: 10px;
 }
 
+button:hover {
+    background-color: #FFA07A;
+    color: #000;
+}
+
 /* Table styling */
 
 table {
