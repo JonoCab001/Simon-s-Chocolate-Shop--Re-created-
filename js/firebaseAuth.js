@@ -30,8 +30,8 @@
     }, 5000);
 }
 
+// Functionality for the sign-up button
 const signUp = document.getElementById("submitSignUp");
-
 signUp.addEventListener("click", (event) => {
     event.preventDefault();
     
@@ -73,4 +73,32 @@ signUp.addEventListener("click", (event) => {
             showMessage(`Error creating account: ${error.message}`, "registerMessage");
         }
     })
+});
+
+// Functionality for the login button
+const login = document.getElementById("submitLogin");
+login.addEventListener("click", (event) => {
+   event.preventDefault();
+
+   const email = document.getElementById("email").value;
+   const password = document.getElementById("password").value;
+   const auth = getAuth();
+
+   loginWithEmailAndPassword(auth, email, password).then((userCredential) => {
+    showMessage('You have logged in', 'signInMessage');
+
+    const user = userCredential.user;
+
+    localStorage.setItem('loggedInUserId', user.uid);
+   })
+   .catch((error) => {
+    const errorCode = error.code;
+
+    if (errorCode === 'auth/invalid-credential') {
+        showMessage("Invalid email or password", "signInMessage");
+    }
+    else {
+        showMessage(`That account doesn't exist`, "signInMessage");
+    }
+   })
 });
