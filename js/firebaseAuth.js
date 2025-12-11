@@ -90,6 +90,8 @@ login.addEventListener("click", (event) => {
     const user = userCredential.user;
 
     localStorage.setItem('loggedInUserId', user.uid);
+
+    window.location.href = "index.html";
    })
    .catch((error) => {
     const errorCode = error.code;
