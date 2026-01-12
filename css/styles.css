@@ -61,6 +61,10 @@ footer {
     text-decoration: none;
 }
 
+.nav .logout-button {
+    float: right;
+}
+
 /* 2 Column Layout */
 /*
 nav ul {
