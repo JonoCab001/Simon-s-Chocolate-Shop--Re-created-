@@ -235,6 +235,12 @@ aside h3 {
     font-style: normal;
 }
 
+/* Sign in and Sign up Message */
+.messageDiv {
+    color: rgb(7, 7, 131);
+    font-weight: bold;
+}
+
 /* Display in Responsive view (i.e., Mobile or Tablet View) */
 
 @media screen and (max-width:500px) {

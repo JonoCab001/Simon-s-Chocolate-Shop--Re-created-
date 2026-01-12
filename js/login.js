@@ -45,7 +45,7 @@
   
       localStorage.setItem('loggedInUserId', user.uid);
   
-      window.location.href = 'about.html';
+      window.location.href = 'index-loggedin.html';
      })
      .catch((error) => {
       const errorCode = error.code;
