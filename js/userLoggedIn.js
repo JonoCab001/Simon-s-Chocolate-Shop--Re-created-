@@ -22,6 +22,28 @@
   const auth = getAuth();
   const db = getFirestore();
 
+  // When User is logged in
+  onAuthStateChanged(auth, (user) => {
+    const loggedInUserId = localStorage.getItem('loggedInUserId');
+
+    if (loggedInUserId) {
+      console.log(user);
+
+      const docRef = doc(db, 'users', loggedInUserId);
+
+      getDoc(docRef).then((docSnap) => {
+        if (docSnap.exists()) {
+          const userData = docSnap.data();
+
+          document.getElementById('loggedUserFirstName').innerText = userData.firstName;
+        }
+      })
+    }
+    else {
+      console.log("no document found matching id");
+    }
+  })
+
 // To sign out the user
 const logoutButton = document.getElementById('logout');
 
