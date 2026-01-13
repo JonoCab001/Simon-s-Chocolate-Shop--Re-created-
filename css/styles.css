@@ -115,8 +115,13 @@ footer {
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+/* .dropdown:hover .dropdown-content {
   display: block;
+} */
+
+/* Show the dropdown menu */
+.show {
+    display: block;
 }
 
 /* 2 Column Layout */

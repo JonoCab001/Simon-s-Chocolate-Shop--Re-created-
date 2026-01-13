@@ -42,3 +42,26 @@ registerPassword.oninput = function() {
     power.style.width = widthPower[point];
     power.style.backgroundColor = colorPower[point];
 }
+
+// Dropdown menu function
+/* When the user clicks on the button, this will toggle between hiding 
+and showing dropdown content */
+function dropdown() {
+    document.getElementById("dropdownList").classList.toggle("show");
+}
+
+// This closes the dropdown menu when the user clicks anywhere outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
