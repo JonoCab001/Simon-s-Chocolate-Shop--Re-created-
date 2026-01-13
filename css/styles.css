@@ -21,6 +21,11 @@ header, footer {
     border-bottom: 2px solid #000;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 footer {
     clear: both;
     text-align: left;
@@ -34,7 +39,6 @@ footer {
     overflow: hidden;
     background-color: #FFDDB0;
     border-bottom: 2px solid #000;
-    
 }
 
 .nav a {
@@ -65,10 +69,15 @@ footer {
     float: right;
 }
 
+.login-status span {
+    float: right;
+    text-align: center;
+    padding: 14px 16px;
+}
+
 /* Dropdown menu */
 /* The dropdown container */
 .dropdown {
-  float: left;
   overflow: hidden;
 }
 
@@ -93,6 +102,7 @@ footer {
 .dropdown-content {
   display: none;
   position: absolute;
+  right: 0;
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
