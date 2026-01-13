@@ -18,14 +18,20 @@
             <a href="prices.html">Prices</a>
             <a href="contact.html">Contact us</a>
             <a href="about.html">About us</a>
-            <a class="logout-button" id="logout">Logout</a>
+            <div class="dropdown">
+                <button class="dropbtn"><i class="fa-solid fa-user"></i></button>
+                <div class="dropdown-content">
+                    <a class="logout-button" id="logout">logout</a>
+                </div>
+            </div>
             <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
         <div class="main">
             <p>
-                <h1>Hi <span id="loggedUserFirstName"></span></h1>
+                <!-- <h1>Hi <span id="loggedUserFirstName"></span></h1> -->
                 Welcome to Simon's Chocolate Shop<br>
                 <!-- <img src="https://i.pinimg.com/originals/51/04/bc/5104bcab2bb6e09dc7d9113dc4d564c1.gif" alt="Simpsons Uter running gif" width="430" height="322"> -->
+
             </p>
         </div>    
         <footer>&copy; Simon's Chocolate Shop 2022</footer>
