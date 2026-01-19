@@ -65,3 +65,26 @@ window.onclick = function(event) {
         }
     }
 }
+
+// Dropdown menu function (Edit Button)
+/* When the user clicks on the button, this will toggle between hiding 
+and showing dropdown content */
+function dropdown2() {
+    document.getElementById("dropdownList2").classList.toggle("show");
+}
+
+// This closes the dropdown menu when the user clicks anywhere outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.editBtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}
