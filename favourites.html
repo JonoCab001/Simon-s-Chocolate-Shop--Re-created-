@@ -8,13 +8,14 @@
         <link rel="stylesheet" href="css/styles.css">
         <link rel="stylesheet" href="css/print.css" media="print">
         <script type="module" src="js/userLoggedIn.js"></script>
+        <script type="module" src="js/firebaseCRUD.js"></script>
 </head>
 <body>
     <script src="js/script.js"></script>
         <header><a href="index.html"><img src="images/SimonsChocolateShopLogo.png" alt="Simon's Chocolate Shop Logo"></a></header>
         <div class="nav" id="myNav">
             <a href="index-loggedin.html">Home</a>
-            <a href="#">Chocolates</a>
+            <a href="chocolates-loggedIn.html">Chocolates</a>
             <a href="#">Prices</a>
             <a href="favourites.html" class="current">Favourites</a>
             <a href="#">Contact us</a>
@@ -29,14 +30,14 @@
             <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">&#9776;</a>
         </div>
         <div class="main">
-            <div class="dropdown">
-                <button class="editBtn" id="edit-button" onclick="dropdown2()">Edit</button>
+            <button class="editBtn" id="edit-button" onclick="dropdown2()">Edit</button>
+            <div class="dropdown2">
                 <div id="dropdownList2" class="dropdown-content2">
                     <a class="move-button" id="moveItems">Move</a>
                     <a class="del-button" id="delItems">Delete</a>
                 </div>
             </div>
-            <table>
+            <table id="favourites">
                 <thead>
                     <tr>
                         <th class="left">Chocolate Name</th>
@@ -45,8 +46,8 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Mulled Wine</td>
-                        <td><img src="images/MulledWineChoc.png" alt="Mulled Wine Chocolate" style="width: 100%;"></td>
+                        <td id="name">Mulled Wine</td>
+                        <td id="image"><img src="images/MulledWineChoc.png" alt="Mulled Wine Chocolate" style="width: 100%;"></td>
                     </tr>
                 </tbody>
             </table>

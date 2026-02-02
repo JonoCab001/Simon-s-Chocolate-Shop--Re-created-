@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Simon's Chocolate Shop</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="module" src="js/firebaseCRUD.js"></script>
+    </head>
+    <body>
+        <script src="js/script.js"></script>
+        <header><a href="index.html"><img src="images/SimonsChocolateShopLogo.png" alt="Simon's Chocolate Shop Logo"></a></header>
+        <div class="nav" id="myNav">
+            <a href="index-loggedin.html">Home</a>
+            <a href="chocolates-loggedIn.html" class="current">Chocolates</a>
+            <a href="#">Prices</a>
+            <a href="favourites.html">Favourites</a>
+            <a href="#">Contact us</a>
+            <a href="#">About us</a>
+            <div class="dropdown">
+                <button class="dropbtn" onclick="dropdown()"><i class="fa-solid fa-user"></i></button>
+                <div id="dropdownList" class="dropdown-content">
+                    <h2><i class="fa-solid fa-circle-user"></i><span id="loggedUserFirstName"></span></h2>
+                    <a class="logout-button" id="logout">logout</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" style="font-size: 15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <div class="main">
+            <h1>Chocolates</h1>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="left">Chocolate Name</th>
+                        <th>Image</th>
+                    </tr>
+                </thead>
+                    <tbody>
+                        <tr>
+                            <td id="name">Mulled Wine</td>
+                            <td id="image"><img src="images/MulledWineChoc.png" alt="Mulled Wine Chocolate" style="width: 100%;" class="hover-img"><div class="hide-button"><button class="fav-button" id="addButton">Add to Favourites</button></div></td>
+                        </tr>
+                        <tr>
+                            <td>Pistachio Ganachio</td>
+                            <td><img src="images/PistachioGanachioChoc.png" alt="Pistachio Ganachio Chocolate" style="width: 100%;" class="hover-img"><div class="hide-button"><button class="fav-button">Add to Favourites</button></div></td>
+                        </tr>
+                        <tr>
+                            <td>Dark Zesty Orange and Almond</td>
+                            <td><img src="images/DarkZestyOrangeAndAlmondChoc.png" alt="Dark Zesty Orange and Almond Chocolate" style="width: 100%;" class="hover-img"><div class="hide-button"><button class="fav-button">Add to Favourites</button></div></td>
+                        </tr>
+                        <tr>
+                            <td>Almond</td>
+                            <td><img src="images/DarkZestyOrangeAndAlmondChoc.png" alt="Dark Zesty Orange and Almond Chocolate" style="width: 100%;" class="hover-img"><div class="hide-button"><button class="fav-button">Add to Favourites</button></div></td>
+                        </tr>
+                    </tbody>
+            </table>
+        </div>
+        <footer>&copy; Simon's Chocolate Shop 2022</footer>
+    </body>
+</html>

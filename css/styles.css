@@ -82,7 +82,7 @@ footer {
 }
 
 .dropdown2 {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /* Dropdown button */
@@ -96,10 +96,16 @@ footer {
   margin: 0; /* Important for vertical align on mobile phones */
 }
 
-/* Add a red background color to navbar links on hover */
+/* Navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #804901;
   color: #fff;
+}
+
+.main a:hover, .dropdown2:hover {
+    color: #fff;
+    background-color: #804901;
+  
 }
 
 /* User icon display next to username */
@@ -254,6 +260,30 @@ button#edit-button {
     color: #fff;
     border: none;
     border-radius: 10px;
+}
+
+button.fav-button {
+    padding: 0.8em;
+    background-color: #8C4B1D;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+button.fav-button:hover {
+    background-color: #FFA07A;
+    color: #000;
+}
+
+/* Hover to show elements */
+/* .hide-button {
+    display: none;
+    transition: 0s;
+} */
+
+.hover-img:hover + .hide-button {
+    display: block;
+    transition-delay: 10s;
 }
 
 /* Password Strength Meter */
