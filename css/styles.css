@@ -267,7 +267,6 @@ button.fav-button {
     background-color: #8C4B1D;
     color: #fff;
     border: none;
-    border-radius: 10px;
 }
 
 button.fav-button:hover {
@@ -284,6 +283,35 @@ button.fav-button:hover {
 .hover-img:hover + .hide-button {
     display: block;
     transition-delay: 10s;
+}
+
+/* Cards */
+.cards {
+    max-width: 700px;
+    margin: 1em auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-gap: 20px;
+}
+
+.card {
+    border: 2px solid #000;
+    border-radius: 3px;
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+}
+
+.card img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card h3 {
+    text-align: center;
+    background-color: #8C4B1D;
+    color: #fff;
+    border-bottom: 2px solid #000;
 }
 
 /* Password Strength Meter */
