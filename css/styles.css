@@ -75,6 +75,11 @@ footer {
     padding: 14px 16px;
 }
 
+/* Main Element */
+.main {
+    padding: 1.2em;
+}
+
 /* Dropdown menu */
 /* The dropdown container */
 .dropdown {
@@ -283,6 +288,14 @@ button.fav-button:hover {
 .hover-img:hover + .hide-button {
     display: block;
     transition-delay: 10s;
+}
+
+/* Blockquote */
+blockquote {
+    padding: 0.5em;
+    text-align: center;
+    background-color: #D73F40;
+    color: #fff;
 }
 
 /* Cards */

@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-app.js";
-  import { getFirestore, addDoc, getDocs, collection } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
+  import { getFirestore, addDoc, getDocs, collection, doc } from "https://www.gstatic.com/firebasejs/11.10.0/firebase-firestore.js";
   // TODO: Add SDKs for Firebase products that you want to use
   // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -28,7 +28,8 @@
       const docRef = await addDoc(collection(db, "favourites"), {
         name : name
       })
-      document.querySelector('name').value = "";
+      document.querySelector('#name').value = "";
+      getData();
     }
     catch (error) {
       console.log(error);
@@ -39,28 +40,34 @@
 
   addBtn.addEventListener('click', addData);
 
-  // Get Data from Firestore
-  async function getData() {
-    try {
-      const getDataQuery = await getDocs(collection(db, "favourites"))
-
-      let html = "";
-
-      getDataQuery.forEach((doc) => {
-        const data = doc.data()
-
-        html += `
-        <tr>
-          <td>${data.name}</td>
-        </tr>
-        `
-      })
-
-      document.querySelector('favourites').innerHTML = html;
+   // Get Data from Firestore
+    async function getData() {
+      try {
+        const getDataQuery = await getDocs(collection(db, "favourites"))
+  
+        let html = "";
+  
+        getDataQuery.forEach((doc) => {
+          const data = doc.data()
+  
+          // html += `
+          // <div class="cards">
+          //         <div class="card">
+          //             <div class="container">
+          //                 <h3>${data.name}</h3>
+          //             </div>
+          //             <img src="images/MulledWineChoc.png" alt="Mulled Wine Chocolate">
+          //             <button class="fav-button" id="addButton">Add to Favourites</button>
+          //         </div>
+          //     </div>
+          // `
+        })
+  
+        document.querySelector('table').innerHTML = html;
+      }
+      catch (error) {
+        console.log(error);
+      }
     }
-    catch (error) {
-      console.log(error);
-    }
-  }
-
-  getData();
+  
+    getData();
